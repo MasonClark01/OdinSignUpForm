@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="imageFolder" href="images/">
+    <link rel="javaScript" href="javaScript.js">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="left">
+            <div class="logoBackground">
+                <img src="images/odin-lined.png" alt="odinProjectLogo" class="odinLogo">
+                <p>Mason Clark</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="rightHead">
+                <h2>This Is Not A Real Service!</h2>
+                <p>This is a project to display my knowledge of forms to potential employers.<br> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, doloribus?</p>
+            </div>
+            <div class="rightBody">
+                <form id="newAccount" action="#">
+                    <h2>Sign Up Today!</h2>
+                    <fieldset>
+                        <div class="inputField">
+                            <label for="fName">First Name:</label>
+                            <input type="text" name="firstName" id="fName" required>
+                        </div>
+                        <div class="inputField">
+                            <label for="lName">Last Name:</label>
+                            <input type="text" name="lastName" id="lName" required>
+                        </div>
+                        <div class="inputField">
+                            <label for="eAdd">Email:</label>
+                            <input type="email" name="emailAdd" id="eAdd" required>
+                        </div>
+                        <div class="inputField">
+                            <label for="pNum">Phone Number:</label>
+                            <input type="text" name="phoneNum" id="pNum" required minlength="9" maxlength="9" pattern="\d*">
+                        </div>
+                        <div class="inputField">
+                            <label for="pWord">Password:</label>
+                            <input type="password" name="passWord" id="pWord" onchange="pwCheck()" required>
+                        </div>
+                        <div class="inputField">
+                            <label for="confirmPWord">Confirm Password:</label>
+                            <input type="password" name="confirmPassWord" id="confirmPWord" onchange="pwCheck()" required>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="rightFooter">
+                <button type="submit" form="newAccount">Create Account</button>
+                <p>Already have an account? <a href="#">Log In</a></p>
+                <p>Photo By <a href="https://unsplash.com/@arkiesam">Samuel Arkwright</a> on <a href="https://unsplash.com/">Unsplash.</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="javaScript.js"></script>
+</body>
+</html>
